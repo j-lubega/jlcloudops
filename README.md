@@ -1,4 +1,4 @@
-**jlcloudops**: 
+**purenest360 cloudops**: 
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -38,7 +38,7 @@ Status: *Active / Documentation in Progress...*
 
 🚀 **Mission**
 
-The goal of **jlcloudops** is to provide a central "source of truth" for solving complex technical issues. This repo serves as both a daily utility for troubleshooting and a showcase of technical depth for professional growth in Cloud Architecture.
+The goal of **purenest360 cloudops** is to provide a central "source of truth" for solving complex technical issues. This repo serves as both a daily utility for troubleshooting and a showcase of technical depth for professional growth in Cloud Architecture.
 
 
 *Author: Jimmy Lubega*

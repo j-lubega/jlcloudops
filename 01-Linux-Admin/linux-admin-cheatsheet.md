@@ -1,22 +1,24 @@
 
-🐧 Linux Administration: The Support Engineer's Cheatsheet
+🐧 Linux Administration: The Support Engineer's Linux Cheatsheet
 
 Author: Jimmy Lubega
 
 Focus: System Health, Troubleshooting, and Performance Tuning
 
 1. The Essentials (Navigation & File Operations)
-Command             | Meaning / Use Case
----------------------|-----------------------------------------------------------
-pwd                  | Print Working Directory: Shows exactly where you are.
-ls -lah             | List Files: Shows all files (including hidden) with sizes in KB/MB/GB.
-cd ..               | Jump Back: Switches back to the previous directory you were in.
-mkdir -p a/b/c     | Make Parent: Creates a nested directory structure in one go.
-cp -r                | Recursive Copy: Used to copy entire folders.
-mv old_name new_name | Move/Rename: Used to rename files or move them to new paths.
-rm -rf               | Force Delete: Deletes a folder and everything inside (Use with caution!).
+   
+Command           | Meaning / Use Case
+------------------ | -----------------------------------------------------------------------
+pwd                   | Print Working Directory: Shows exactly where you are.
+ls -lah               | List Files: Shows all files (including hidden) with sizes in KB/MB/GB.
+cd ..                 | Jump Back: Switches back to the previous directory you were in.
+mkdir -p a/b/c        | Make Parent: Creates a nested directory structure in one go.
+cp -r                 | Recursive Copy: Used to copy entire folders.
+mv old_name new_name  | Move/Rename: Used to rename files or move them to new paths.
+rm -rf                | Force Delete: Deletes a folder and all its contents (Use with caution).
 
 2. Searching & Filtering (The "Grep" Power)
+   
 Command                  | Meaning / Use Case
 ------------------------|--------------------------------------------------------------
 grep -i "error" log.txt| Search Text: Finds "error" in a file (ignores case).
@@ -27,6 +29,7 @@ find /var/log -mtime -7 | Find Recent: Finds files modified in the last 7 days.
 locate filename        | Quick Find: Uses an indexed database to find files instantly.
 
 3. System Health & Performance
+   
 Command                   | Meaning / Use Case
 ---------------------------|--------------------------------------------------------------
 top                        | Real-time view of CPU and Memory usage.
@@ -38,6 +41,7 @@ du -sh * | sort -h  | Disk Usage: Lists files in current directory sorted by siz
 iostat -xz 1             | Disk I/O: Shows if the disk is slow (high %util).
 
 4. Users, Permissions & Security
+   
 Command                   | Meaning / Use Case
 --------------------------|--------------------------------------------------------------
 chmod 400 key.pem         | Secure Key: Makes a file readable only by the owner (standard for SSH).
@@ -48,6 +52,7 @@ history | grep "ssh" | Command History: Finds that long SSH command you ran yest
 id                         | Identity: Shows your current UserID (UID) and GroupID (GID).
 
 5. Networking & Connectivity (TSE Focus)
+   
 Command                    | Meaning / Use Case
 --------------------------|--------------------------------------------------------------
 ip addr show                | Check IP: Modern replacement for ifconfig.
@@ -59,6 +64,7 @@ nc -zv 10.0.0.1 80        | Netcat Port Check: Checks if a remote port is open w
 tcpdump -i eth0           | Packet Sniffer: Capture network traffic for deep analysis.
 
 6. Logs & Advanced Troubleshooting
+   
 Command                   | Meaning / Use Case
 --------------------------|--------------------------------------------------------------
 tail -f /var/log/syslog   | Live Logs: Follows the system log as it happens.
@@ -69,6 +75,7 @@ strace -p <PID>            | System Trace: Watches every system call a process m
 fuser -k 80/tcp            | Port Killer: Finds and kills the process blocking port 80.
 
 7. Package & Service Management
+   
 Command                     | Meaning / Use Cases
 ----------------------------|--------------------------------------------------------------
 systemctl status <svc>     | Service Status: Check if a service is running/failed.

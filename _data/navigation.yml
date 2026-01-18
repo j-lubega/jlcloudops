@@ -1,0 +1,15 @@
+- title: Home
+  url: /
+
+- title: DevOps
+  url: /pages/devops
+
+- title: Cloud
+  url: /pages/cloud
+
+- title: Security
+  url: /pages/security
+
+- title: Automation
+  url: /pages/automation
+

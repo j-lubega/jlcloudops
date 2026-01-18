@@ -1,0 +1,29 @@
+title: JLCloudOps Knowledge Base
+description: >
+  A practical DevOps & Cloud engineering knowledge base focused on
+  automation, reliability, security, and scalable cloud solutions.
+
+author:
+  name: Jimmy Lubega
+  role: DevOps & Cloud Engineer
+  
+
+url: https://j-lubega.github.io
+baseurl: /jlcloudops
+
+theme: null
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+
+seo:
+  type: WebSite
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+

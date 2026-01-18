@@ -1,10 +1,4 @@
----
-title: "Security Best Practices for DevOps & Cloud Engineers"
-description: "Essential security best practices for DevOps and Cloud Engineers to build secure, compliant, and resilient systems."
-tags: [security, devops, cloud, best practices, compliance, iam]
----
-
-# ☁️ Security Best Practices for DevOps & Cloud Engineers
+## ☁️ Security Best Practices for DevOps & Cloud Engineers
 
 Security is a **first-class concern** in modern DevOps and cloud environments. Implementing security practices consistently helps protect assets, maintain compliance, and ensure reliability.
 

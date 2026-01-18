@@ -1,23 +1,60 @@
-/* Full-page moving background */
-.background-container {
+/* Video Background */
+.video-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../images/tech-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-
-  /* Subtle movement effect */
-  animation: backgroundMove 120s linear infinite;
-  z-index: -1; /* Sit behind page content */
+  z-index: -1; /* Behind all content */
+  overflow: hidden;
 }
 
-/* Keyframes for gentle animation */
-@keyframes backgroundMove {
-  0% { background-position: 0 0; }
-  50% { background-position: 100px 50px; }
-  100% { background-position: 0 0; }
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire viewport */
 }
+
+/* Optional: semi-transparent overlay to improve readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.5); /* Adjust opacity for effect */
+  z-index: -1;
+}
+
+/* Site Header Styling */
+.site-header {
+  position: relative; /* Above video */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1); /* optional transparent header */
+  backdrop-filter: blur(5px); /* optional glass effect */
+  color: #ffffff; /* text color for contrast */
+}
+
+.site-header .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.site-header nav a {
+  margin-left: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
 
 
